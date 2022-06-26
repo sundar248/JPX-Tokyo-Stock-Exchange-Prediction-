@@ -1,0 +1,33 @@
+Column,Sample value,Type,Addendum,Remarks
+DateCode,20170104_144122718,string,,Unique ID for option price records
+Date,2017-01-04 0:00:00,date,,Trade date and time
+OptionsCode,144122718,string,,Local Securities Code (link to https://www.jpx.co.jp/english/sicc/regulations/b5b4pj0000023mqo-att/(HP)sakimono20220208-e.pdf )
+WholeDayOpen,0,float,,Opening Price for Whole Trading Day
+WholeDayHigh,0,float,,High Price for Whole Trading Day
+WholeDayLow,0,float,,Low Price for Whole Trading Day
+WholeDayClose,0,float,,Closing Price for Whole Trading Day
+NightSessionOpen,0,float,,Opening Price for Night Session
+NightSessionHigh,0,float,,High Price for Night Session
+NightSessionLow,0,float,,Low Price for Night Session
+NightSessionClose,0,float,,Closing Price for Night Session
+DaySessionOpen,0,float,,Opening Price for Day Session
+DaySessionHigh,0,float,,High Price for Day Session
+DaySessionLow,0,float,,Low Price for Day Session
+DaySessionClose,0,float,,Closing Price for Day Session
+TradingVolume,0,Int64,,DaySessionVolume + NightSessionVolume + J-NET Trading Volume (https://www.jpx.co.jp/english/derivatives/rules/j-net/index.html). There is no price data for J-NET trades.
+OpenInterest,0,Int64,,Open interest of the product/contract for the whole trading day
+TradingValue,0,Int64,,Trading value of the product/contract for the whole trading day
+ContractMonth,201912,Int64,,Cotract year-month of the product/contract
+StrikePrice,12750,float,,Exercise Price of product/contract
+WholeDayVolume,0,Int64,, DaySessionVolume + NightSessionVolume
+Putcall,2,Int64,,"Put:1
+Call:2"
+LastTradingDay,20191212,date,,Last Trading Day
+SpecialQuotationDay,20191213,date,,The day when the Special Quotation is calculated
+SettlementPrice,6680,float,,Settlement price
+TheoreticalPrice,6679.7,float,,The theoretical price at the end of a day session
+BaseVolatility,17.4736,float,,The volatility at the time of calculating the settlement price
+ImpliedVolatility,26.0651,float,,Implied Volatility
+InterestRate,0.1282,float,,Interest rate for calculation
+DividendRate,1.6817,float,,Dividendv yeild
+Dividend,0.00E+00,float,,Devidend

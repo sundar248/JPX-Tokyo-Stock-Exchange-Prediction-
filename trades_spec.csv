@@ -1,0 +1,63 @@
+index,Column,Sample value,Type,Addendum,Remarks
+0,PublishedDate,2017-01-13,date,,"data published data, usually Thursday on the following week."
+0,StartDate,2017-01-04,date,,The first trading date in this trading week
+1,EndDate,2017-01-06,date,,The last trading date in this trading week
+2,Section,Prime Market (First Section),string,,Market division name
+3,TotalSales,8476800009,Int64,,"Please check below documents.
+
+Published file
+https://www.jpx.co.jp/english/markets/statistics-equities/investor-type/b5b4pj000004r9zg-att/stock_val_1_220301.pdf
+
+Explanation of the Trading by Type of Investors
+https://www.jpx.co.jp/english/markets/statistics-equities/investor-type/07.html"
+4,TotalPurchases,8483346362,Int64,,
+5,TotalTotal,16960146371,Int64,,
+6,TotalBalance,6546353,Int64,,
+7,ProprietarySales,1311271004,Int64,,
+8,ProprietaryPurchases,1453326508,Int64,,
+9,ProprietaryTotal,2764597512,Int64,,
+10,ProprietaryBalance,142055504,Int64,,
+11,BrokerageSales,7165529005,Int64,,
+12,BrokeragePurchases,7030019854,Int64,,
+13,BrokerageTotal,14195548859,Int64,,
+14,BrokerageBalance,-135509151,Int64,,
+15,IndividualsSales,1401711615,Int64,,
+16,IndividualsPurchases,1161801155,Int64,,
+17,IndividualsTotal,2563512770,Int64,,
+18,IndividualsBalance,-239910460,Int64,,
+19,ForeignersSales,5094891735,Int64,,
+20,ForeignersPurchases,5317151774,Int64,,
+21,ForeignersTotal,10412043509,Int64,,
+22,ForeignersBalance,222260039,Int64,,
+23,SecuritiesCosSales,76381455,Int64,,
+24,SecuritiesCosPurchases,61700100,Int64,,
+25,SecuritiesCosTotal,138081555,Int64,,
+26,SecuritiesCosBalance,-14681355,Int64,,
+27,InvestmentTrustsSales,168705109,Int64,,
+28,InvestmentTrustsPurchases,124389642,Int64,,
+29,InvestmentTrustsTotal,293094751,Int64,,
+30,InvestmentTrustsBalance,-44315467,Int64,,
+31,BusinessCosSales,71217959,Int64,,
+32,BusinessCosPurchases,63526641,Int64,,
+33,BusinessCosTotal,134744600,Int64,,
+34,BusinessCosBalance,-7691318,Int64,,
+35,OtherInstitutionsSales,10745152,Int64,,
+36,OtherInstitutionsPurchases,15687836,Int64,,
+37,OtherInstitutionsTotal,26432988,Int64,,
+38,OtherInstitutionsBalance,4942684,Int64,,
+39,InsuranceCosSales,15926202,Int64,,
+40,InsuranceCosPurchases,9831555,Int64,,
+41,InsuranceCosTotal,25757757,Int64,,
+42,InsuranceCosBalance,-6094647,Int64,,
+43,CityBKsRegionalBKsEtcSales,10606789,Int64,,
+44,CityBKsRegionalBKsEtcPurchase,8843871,Int64,,
+45,CityBKsRegionalBKsEtcTotal,19450660,Int64,,
+46,CityBKsRegionalBKsEtcBalance,-1762918,Int64,,
+47,TrustBanksSales,292932297,Int64,,
+48,TrustBanksPurchases,245322795,Int64,,
+49,TrustBanksTotal,538255092,Int64,,
+50,TrustBanksBalance,-47609502,Int64,,
+51,OtherFinancialInstitutionsSales,22410692,Int64,,
+52,OtherFinancialInstitutionsPurchases,21764485,Int64,,
+53,OtherFinancialInstitutionsTotal,44175177,Int64,,
+54,OtherFinancialInstitutionsBalance,-646207,Int64,,

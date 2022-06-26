@@ -1,0 +1,28 @@
+Column,Sample value,Type,Addendum,Remarks
+SecuritiesCode,1301,Int64,,Local Securities Code
+EffectiveDate,20211230,date,,the effective date
+Name,"KYOKUYO CO.,LTD.",string,,Name of security
+Section/Products,First Section (Domestic),string,,Section/Product
+NewMarketSegment,Prime Market,string,,"New market segment effective from 2022-04-04 (as of 15:30 JST on Mar 11 2022)
+ref. https://www.jpx.co.jp/english/equities/market-restructure/market-segments/index.html"
+33SectorCode,50,Int64,,"33 Sector Name
+
+ref. https://www.jpx.co.jp/english/markets/indices/line-up/files/e_fac_13_sector.pdf"
+33SectorName,"Fishery, Agriculture and Forestry",string,,"33 Sector Name
+
+ref. https://www.jpx.co.jp/english/markets/indices/line-up/files/e_fac_13_sector.pdf"
+17SectorCode,1,Int64,,"17 Sector Code
+ref. https://www.jpx.co.jp/english/markets/indices/line-up/files/e_fac_13_sector.pdf"
+17SectorName,FOODS,string,,"17 Sector Name
+ref. https://www.jpx.co.jp/english/markets/indices/line-up/files/e_fac_13_sector.pdf"
+NewIndexSeriesSizeCode,7,Int64,,"TOPIX New Index Series code
+
+ref. https://www.jpx.co.jp/english/markets/indices/line-up/files/e_fac_12_size.pdf"
+NewIndexSeriesSize,TOPIX Small 2,string,,"TOPIX New Index Series Name
+
+ref. https://www.jpx.co.jp/english/markets/indices/line-up/files/e_fac_12_size.pdf"
+TradeDate,20211230,date,,Trade date to calculate MarketCapitalization
+Close,3080,float,,Close price to calculate MarketCapitalization
+IssuedShares,1.09E+07,float,,Issued shares
+MarketCapitalization,33659111640,float,,Market capitalization on Dec 3 2021
+Universe0,TRUE,boolean,,a flag of prediction target universe (top 2000 stocks by market capitalization)

@@ -1,0 +1,15 @@
+Column,Sample value,Type,Addendum,Remarks
+RowId,20170104_1301,string,,Unique ID of price records
+Date,2017-01-04 0:00:00,date,,Trade date
+SecuritiesCode,1301,Int64,,Local securities code
+Open,2734,float,,first traded price on a day
+High,2755,float,,highest traded price on a day
+Low,2730,float,,lowest traded price on a day
+Close,2742,float,,last traded price on a day
+Volume,31400,Int64,,number of traded stocks on a day
+AdjustmentFactor,1,float,,to calculate theoretical price/volume when split/reverse-split happens (NOT including dividend/allotment of shares/)
+SupervisionFlag,FALSE,boolean,,"Flag of Securities Under Supervision & Securities to Be Delisted
+https://www.jpx.co.jp/english/listing/market-alerts/supervision/00-archives/index.html )"
+ExpectedDividend,,float,,Expected dividend value for ex-right date. This value is recorded 2 business days before ex-dividend date.
+ExpectedDividend,,float,,Expected dividend value for ex-right date. This value is recorded 2 business days before ex-dividend date.
+Target,0.00073,float,,Change ratio of adjusted closing price between t+2 and t+1 where t+0 is TradeDate

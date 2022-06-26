@@ -1,0 +1,66 @@
+Column,Sample value,Type,Addendum,Remarks
+DisclosureNumber,20161025419878,Int64,,Unique ID for disclosure documents.
+DateCode,20170106_7888,string,,combination of TradeDate and LocalCode (this is not unique for stock_fin as a company can disclose multiple documents on a day)
+Date,2017-01-06 0:00:00,date,,Trade date. This column is used to align with stock_price's TradeDate
+SecuritiesCode,7888,Int64,,Local Securities Code
+DisclosedDate,2017-01-06 0:00:00,date,,Date on which the document disclosed.
+DisclosedTime,15:30:00,time,,Time on which the document disclosed.
+DisclosedUnixTime,1483684200,Int64,,Unix time of the datetime on which the document disclosed.
+TypeOfDocument,2QFinancialStatements_Consolidated_JP,string,,Document type indicated by ID.
+CurrentPeriodEndDate,2016-11-30,date,,End date of the current accounting period.
+TypeOfCurrentPeriod,2Q,date,"[Normal] 1Q (1st Quarter), 2Q (2nd Quarter), 3Q (3rd Quarter), FY (Fiscal Year)
+[Applying of irregular fiscal year] 4Q (4th Quarter), 5Q (5th Quarter)","Type of the current accounting period.
+
+[Note] Normally, companies do not disclose the 4Q financial statements independently, but discloses it in the annual financial results (FY). Therefore, the 4Q and 5Q financial statements only appear if companies adopt the irregular fiscal year (over 12 months)."
+CurrentFiscalYearStartDate,2016-06-01,date,YYYY-MM-DD,Start date of the current fiscal year.
+CurrentFiscalYearEndDate,2017-05-31,date,YYYY-MM-DD,End date of the current fiscal year.
+NetSales,27528000000,Int64,Cumulated from 1Q,"Gross sales (the total amount of sales a company earned) minus returns, allowances, and discounts [yen].
+
+[IFRS] Revenue."
+OperatingProfit,1076000000,Int64,Cumulated from 1Q,"Net sales minus operating expenses (cost of goods sold and SG&A expenses) [yen].
+
+[Note] Blank if banks or Insurances adapt Japanese standards."
+OrdinaryProfit,1042000000,Int64,Cumulated from 1Q,"[JP Standard] Operating income plus non-operating income (interest revenue, dividends, etc.) minus non-operating expenses (interest expense, loss on sales of securities, etc.) [yen] 
+
+[US Standard / IFRS] Income before income taxes [yen]
+ or Earnings before Interest and taxes [yen]. "
+Profit,796000000,Int64,Cumulated from 1Q,"Income before income taxes (ordinary income plus or minus extraordinary income or loss) minus taxes
+
+[Consolidated] Profit attributable to owners of parent company."
+EarningsPerShare,31.25,float,Cumulated from 1Q (round to 2 decimal places),"Earnings Per Share (EPS), which is the net income divided by the average number of shares during the period."
+TotalAssets,42651000000,Int64,Actual value for the current accounting period.,"Total of the asset, including current assets (cash, marketable securities, etc.), PP&E (property, plant, and equipment), intangible assets (software, patent, etc.), and other assets [yen]."
+Equity,14220000000,Int64,Actual value for the current accounting period.,Total assets minus total liabilities (total of current and fixed liabilities) [yen]
+EquityToAssetRatio,0.326,float,Actual value for the current accounting period. (round to 3 decimal places),Equity divided by total assets
+BookValuePerShare,545.78,float,Actual value for the current accounting period.,"Book-value Per Share (BPS), which is the equity at the end of the period divided by the number of shares at the end of the period."
+ResultDividendPerShare1stQuarter,－,float,"Actual value for the past or current accounting period.
+
+[Note] ""－"" means none of the dividend, ""0"" means that less than 0.1. The same applies below.",Dividend amount at the end of the 1st quarter. [yen]
+ResultDividendPerShare2ndQuarter,5,float,Actual value for the past or current accounting period.,Dividend amount at the end of the 2nd quarter. [yen]
+ResultDividendPerShare3rdQuarter,,float,Actual value for the past or current accounting period.,Dividend amount at the end of the 3rd quarter. [yen]
+ResultDividendPerShareFiscalYearEnd,,float,Actual value for the past or current accounting period.,Dividend amount at the end of the 4th quarter. [yen]
+ResultDividendPerShareAnnual,,float,Actual value for the current fiscal year.,Total annual dividend amount. [yen]
+ForecastDividendPerShare1stQuarter,,float,"Future expectations.
+
+[Note] Blank if it is the past from the current accounting period. The same applies below.",Expected dividend amount at the end of the 1st quarter. [yen]
+ForecastDividendPerShare2ndQuarter,,float,Future expectations.,Expected dividend amount at the end of the 2nd quarter. [yen]
+ForecastDividendPerShare3rdQuarter,－,float,Future expectations.,Expected dividend amount at the end of the 3rd quarter. [yen]
+ForecastDividendPerShareFiscalYearEnd,5,float,Future expectations.,Expected dividend amount at the end of the 4th quarter. [yen]
+ForecastDividendPerShareAnnual,10,float,Future expectations.,Expected total annual dividend amount. [yen]
+ForecastNetSales,56000000000,Int64,Future expectations. (Cumulated from 1Q),Expected annual net sales [yen]
+ForecastOperatingProfit,2400000000,Int64,Future expectations. (Cumulated from 1Q),Expected annual operating income [yen]
+ForecastOrdinaryProfit,2000000000,Int64,Future expectations. (Cumulated from 1Q),Expected annual ordinary income [yen]
+ForecastProfit,1300000000,Int64,Future expectations.,Expected annual net income [yen]
+ForecastEarningsPerShare,51.01,float,Future expectations.,Expected annual earnings per share [yen]
+ApplyingOfSpecificAccountingOfTheQuarterlyFinancialStatements,,boolean,"TRUE, FALSE, or blank","Applying of accounting methods specific to the preparation of quarterly consolidated financial statements.
+
+[Note] Blank if is difficult to distinguish changes in accounting policies from changes in accounting estimates."
+MaterialChangesInSubsidiaries,FALSE,boolean,"TRUE, FALSE, or blank",Changes in significant subsidiaries during the period. (changes in specified subsidiaries that caused changes in the scope of consolidation)
+ChangesBasedOnRevisionsOfAccountingStandard,FALSE,boolean,"TRUE, FALSE, or blank","Changes in accounting policies associated with revisions, etc. of accounting standards, etc."
+ChangesOtherThanOnesBasedOnRevisionsOfAccountingStandard,FALSE,boolean,"TRUE, FALSE, or blank","Changes in accounting policies based on justifiable grounds other than revisions, etc. of accounting standards, etc."
+ChangesInAccountingEstimates,FALSE,boolean,"TRUE, FALSE, or blank","Changes in accounting estimates. (changes in accounting estimates that had been made for the preparation of consolidated financial statements for the previous consolidated fiscal year or any prior consolidated fiscal year, or quarterly consolidated financial statements for the immediately preceding or prior quarterly consolidated accounting period or cumulative quarterly consolidated accounting period based on new information that has become available)"
+RetrospectiveRestatement,FALSE,boolean,"TRUE, FALSE, or blank","The reflection, in consolidated financial statements or quarterly consolidated financial statements, of the correction of an error in consolidated financial statements for the previous consolidated fiscal year or any prior consolidated fiscal year or quarterly consolidated financial statements for the immediately preceding or prior quarterly consolidated accounting period or cumulative quarterly consolidated accounting period.
+
+[Note] Blank if is difficult to distinguish changes in accounting policies from changes in accounting estimates."
+NumberOfIssuedAndOutstandingSharesAtTheEndOfFiscalYearIncludingTreasuryStock,25688569,Int64,Actual value for the current accounting period.,Number of issued shares at the end of the period (including treasury shares) as of the current accounting period.
+NumberOfTreasuryStockAtTheEndOfFiscalYear,203627,Int64,Actual value for the current accounting period.,Number of treasury shares at the end of the period as of the current accounting period.
+AverageNumberOfShares,25485430,Int64,Actual value for the current accounting period.,Average number of shares between the start date of the current fiscal year and the end date of in the current period.
